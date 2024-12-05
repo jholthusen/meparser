@@ -1,5 +1,6 @@
 {
     "require": {
-        "smalot/pdfparser": "^2.11"
+        "smalot/pdfparser": "^2.11",
+        "jacwright/restserver": "^1.2"
     }
 }
