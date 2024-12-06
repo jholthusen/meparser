@@ -16,6 +16,7 @@ class TestController
      *
      * @url POST meparser/index.php
      * @url POST meparser/
+     * @url POST /
      */
     public function parse_me()
     {
