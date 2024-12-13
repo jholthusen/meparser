@@ -1,6 +1,12 @@
 {
     "require": {
-        "smalot/pdfparser": "^2.11",
+        "smalot/pdfparser": "dev-master",
         "jacwright/restserver": "^1.2"
+    },
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/jholthusen/pdfparser"
     }
+]
 }

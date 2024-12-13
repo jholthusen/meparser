@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e309f83835de1afa6a7970ed8aa6c735",
+    "content-hash": "7d9200c085a3488d8177f435c1bfe7c4",
     "packages": [
         {
             "name": "jacwright/restserver",
@@ -60,16 +60,16 @@
         },
         {
             "name": "smalot/pdfparser",
-            "version": "v2.11.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/smalot/pdfparser.git",
-                "reference": "ac8e6678b0940e4b2ccd5caadd3fb18e68093be6"
+                "url": "https://github.com/jholthusen/pdfparser.git",
+                "reference": "7e45fb03586d1adb339ee95bf79b5b762a734d4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smalot/pdfparser/zipball/ac8e6678b0940e4b2ccd5caadd3fb18e68093be6",
-                "reference": "ac8e6678b0940e4b2ccd5caadd3fb18e68093be6",
+                "url": "https://api.github.com/repos/jholthusen/pdfparser/zipball/7e45fb03586d1adb339ee95bf79b5b762a734d4c",
+                "reference": "7e45fb03586d1adb339ee95bf79b5b762a734d4c",
                 "shasum": ""
             },
             "require": {
@@ -78,13 +78,19 @@
                 "php": ">=7.1",
                 "symfony/polyfill-mbstring": "^1.18"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-0": {
                     "Smalot\\PdfParser\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "PerformanceTests\\": "tests/Performance/",
+                    "PHPUnitTests\\": "tests/PHPUnit/"
+                }
+            },
             "license": [
                 "LGPL-3.0"
             ],
@@ -97,17 +103,17 @@
             "description": "Pdf parser library. Can read and extract information from pdf file.",
             "homepage": "https://www.pdfparser.org",
             "keywords": [
+                "PDF",
                 "extract",
                 "parse",
                 "parser",
-                "pdf",
                 "text"
             ],
             "support": {
                 "issues": "https://github.com/smalot/pdfparser/issues",
-                "source": "https://github.com/smalot/pdfparser/tree/v2.11.0"
+                "source": "https://github.com/jholthusen/pdfparser/tree/master"
             },
-            "time": "2024-08-16T06:48:03+00:00"
+            "time": "2024-12-06T09:04:44+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -135,8 +141,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -193,7 +199,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "smalot/pdfparser": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
